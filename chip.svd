@@ -216,18 +216,24 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Comparator 0</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 46.8.6 l.71736-71751 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>COMP1</name>
               <description>Comparator 1</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 46.8.6 l.71736-71751 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>WIN0</name>
               <description>Window 0</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 46.8.6 l.71730-71735 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -1506,18 +1512,24 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Result Ready Interrupt Flag</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 45.8.16 l.70432-70447 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>OVERRUN</name>
               <description>Overrun Interrupt Flag</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 45.8.16 l.70422-70431 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>WINMON</name>
               <description>Window Monitor Interrupt Flag</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 45.8.16 l.70412-70421 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -2181,12 +2193,16 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Encryption Complete</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 42.8.5 l.60814-60837 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>GFMCMP</name>
               <description>GF Multiplication Complete</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 42.8.5 l.60802-60813 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -2988,180 +3004,240 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Rx FIFO 0 New Message</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52823 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>RF0W</name>
               <description>Rx FIFO 0 Watermark Reached</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52814 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>RF0F</name>
               <description>Rx FIFO 0 Full</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52805 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>RF0L</name>
               <description>Rx FIFO 0 Message Lost</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52796 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>RF1N</name>
               <description>Rx FIFO 1 New Message</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52787 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>RF1W</name>
               <description>Rx FIFO 1 Watermark Reached</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52778 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>RF1F</name>
               <description>Rx FIFO 1 FIFO Full</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52769 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>RF1L</name>
               <description>Rx FIFO 1 Message Lost</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52760 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>HPM</name>
               <description>High Priority Message</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52751 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TC</name>
               <description>Timestamp Completed</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52735 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TCF</name>
               <description>Transmission Cancellation Finished</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52726 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TFE</name>
               <description>Tx FIFO Empty</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52717 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TEFN</name>
               <description>Tx Event FIFO New Entry</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52708 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TEFW</name>
               <description>Tx Event FIFO Watermark Reached</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52699 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TEFF</name>
               <description>Tx Event FIFO Full</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52690 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TEFL</name>
               <description>Tx Event FIFO Element Lost</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52681 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TSW</name>
               <description>Timestamp Wraparound</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52672 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>MRAF</name>
               <description>Message RAM Access Failure</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52649 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TOO</name>
               <description>Timeout Occurred</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52640 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DRX</name>
               <description>Message stored to Dedicated Rx Buffer</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52629 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>BEC</name>
               <description>Bit Error Corrected</description>
               <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52618 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>BEU</name>
               <description>Bit Error Uncorrected</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52607 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ELO</name>
               <description>Error Logging Overflow</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52598 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>EP</name>
               <description>Error Passive</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52589 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>EW</name>
               <description>Warning Status</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52580 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>BO</name>
               <description>Bus_Off Status</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52570 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>WDI</name>
               <description>Watchdog Interrupt</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52561 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>PEA</name>
               <description>Protocol Error in Arbitration Phase</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52552 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>PED</name>
               <description>Protocol Error in Data Phase</description>
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52543 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ARA</name>
               <description>Access to Reserved Address</description>
               <bitOffset>29</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.16 l.52512 (register text), bit l.52534 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -3759,192 +3835,256 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>New Data 0</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND1</name>
               <description>New Data 1</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND2</name>
               <description>New Data 2</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND3</name>
               <description>New Data 3</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND4</name>
               <description>New Data 4</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND5</name>
               <description>New Data 5</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND6</name>
               <description>New Data 6</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND7</name>
               <description>New Data 7</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND8</name>
               <description>New Data 8</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND9</name>
               <description>New Data 9</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND10</name>
               <description>New Data 10</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND11</name>
               <description>New Data 11</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND12</name>
               <description>New Data 12</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND13</name>
               <description>New Data 13</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND14</name>
               <description>New Data 14</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND15</name>
               <description>New Data 15</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND16</name>
               <description>New Data 16</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND17</name>
               <description>New Data 17</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND18</name>
               <description>New Data 18</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND19</name>
               <description>New Data 19</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND20</name>
               <description>New Data 20</description>
               <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND21</name>
               <description>New Data 21</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND22</name>
               <description>New Data 22</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND23</name>
               <description>New Data 23</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND24</name>
               <description>New Data 24</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND25</name>
               <description>New Data 25</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND26</name>
               <description>New Data 26</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND27</name>
               <description>New Data 27</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND28</name>
               <description>New Data 28</description>
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND29</name>
               <description>New Data 29</description>
               <bitOffset>29</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND30</name>
               <description>New Data 30</description>
               <bitOffset>30</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND31</name>
               <description>New Data 31</description>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.25 l.53775-53786 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -3960,192 +4100,256 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>New Data 32</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND33</name>
               <description>New Data 33</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND34</name>
               <description>New Data 34</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND35</name>
               <description>New Data 35</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND36</name>
               <description>New Data 36</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND37</name>
               <description>New Data 37</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND38</name>
               <description>New Data 38</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND39</name>
               <description>New Data 39</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND40</name>
               <description>New Data 40</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND41</name>
               <description>New Data 41</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND42</name>
               <description>New Data 42</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND43</name>
               <description>New Data 43</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND44</name>
               <description>New Data 44</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND45</name>
               <description>New Data 45</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND46</name>
               <description>New Data 46</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND47</name>
               <description>New Data 47</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND48</name>
               <description>New Data 48</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND49</name>
               <description>New Data 49</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND50</name>
               <description>New Data 50</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND51</name>
               <description>New Data 51</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND52</name>
               <description>New Data 52</description>
               <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND53</name>
               <description>New Data 53</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND54</name>
               <description>New Data 54</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND55</name>
               <description>New Data 55</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND56</name>
               <description>New Data 56</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND57</name>
               <description>New Data 57</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND58</name>
               <description>New Data 58</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND59</name>
               <description>New Data 59</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND60</name>
               <description>New Data 60</description>
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND61</name>
               <description>New Data 61</description>
               <bitOffset>29</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND62</name>
               <description>New Data 62</description>
               <bitOffset>30</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ND63</name>
               <description>New Data 63</description>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 39.8.26 l.53811-53822 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -7281,48 +7485,64 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Result 0 Underrun</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 47.8.6 l.73240-73253 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>UNDERRUN1</name>
               <description>Result 1 Underrun</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 47.8.6 l.73226-73239 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>EMPTY0</name>
               <description>Data Buffer 0 Empty</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 47.8.6 l.73218-73225 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>EMPTY1</name>
               <description>Data Buffer 1 Empty</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 47.8.6 l.73208-73217 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>RESRDY0</name>
               <description>Result 0 Ready</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 47.8.6 l.73200-73207 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>RESRDY1</name>
               <description>Result 1 Ready</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 47.8.6 l.73192-73199 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>OVERRUN0</name>
               <description>Result 0 Overrun</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 47.8.6 l.73184-73191 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>OVERRUN1</name>
               <description>Result 1 Overrun</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 47.8.6 l.73171-73183 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -7903,18 +8123,24 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>CRC Module Busy</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 22.8.5 l.17592-17619; by a 1 only when the CRC is used through the I/O interface -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CRCZERO</name>
               <description>CRC Zero</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 22.8.5 l.17586-17591: Access R -->
+              <access>read-only</access>
             </field>
             <field>
               <name>CRCERR</name>
               <description>CRC Error</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 22.8.5 l.17582-17585: Access R -->
+              <access>read-only</access>
             </field>
           </fields>
         </register>
@@ -8325,42 +8551,56 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Transfer Error</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 22.8.9 l.17798-17815 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TCMPL</name>
               <description>Transfer Complete</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 22.8.9 l.17792-17797 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>SUSP</name>
               <description>Channel Suspend</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 22.8.9 l.17784-17791 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CRCERR</name>
               <description>CRC Error</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 22.8.9 l.17778-17783 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>FERR</name>
               <description>Fetch Error</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 22.8.9 l.17774-17777: Access R -->
+              <access>read-only</access>
             </field>
             <field>
               <name>BUSY</name>
               <description>Busy</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 22.8.9 l.17770-17773: Access R -->
+              <access>read-only</access>
             </field>
             <field>
               <name>PEND</name>
               <description>Pending</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 22.8.9 l.17766-17769: Access R -->
+              <access>read-only</access>
             </field>
           </fields>
         </register>
@@ -9887,18 +10127,24 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Channel Transfer Error</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 22.8.22 l.18531-18544 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TCMPL</name>
                 <description>Channel Transfer Complete</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 22.8.22 l.18521-18530 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>SUSP</name>
                 <description>Channel Suspend</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 22.8.22 l.18511-18520 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -9914,24 +10160,32 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Channel Pending</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 22.8.23 l.18572-18622: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>BUSY</name>
                 <description>Channel Busy</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 22.8.23 l.18566-18571: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>FERR</name>
                 <description>Channel Fetch Error</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 22.8.23 l.18560-18565: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>CRCERR</name>
                 <description>Channel CRC Error</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 22.8.23 l.18556-18559 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -10009,30 +10263,40 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Done</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 12.13.2 l.4878-4891 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CRSTEXT</name>
               <description>CPU Reset Phase Extension</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 12.13.2 l.4870-4877 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>BERR</name>
               <description>Bus Error</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 12.13.2 l.4864-4869 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>FAIL</name>
               <description>Failure</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 12.13.2 l.4860-4863 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>PERR</name>
               <description>Protection Error</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 12.13.2 l.4854-4859 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -10800,6 +11064,8 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Non-Maskable Interrupt</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 23.8.3 l.19591-19606 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -10882,6 +11148,8 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>External Interrupt</description>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
+              <!-- Kvasir: DS60001507N 23.8.8 l.19772-19787 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -11770,24 +12038,32 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Channel Overrun</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 31.7.4 l.35848-35859 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>EVD</name>
               <description>Channel Event Detected</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 31.7.4 l.35840-35847 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>READY</name>
               <description>Ready</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 31.7.4 l.35836-35839: Access R -->
+              <access>read-only</access>
             </field>
             <field>
               <name>BUSY</name>
               <description>Busy</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 31.7.4 l.35832-35835: Access R -->
+              <access>read-only</access>
             </field>
           </fields>
         </register>
@@ -12177,12 +12453,16 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Channel Overrun</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 31.7.11 l.36231-36248 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>EVD</name>
                 <description>Channel Event Detected</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 31.7.11 l.36225-36230 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -12339,6 +12619,8 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Measurement Done</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 30.8.6 l.34965-34974 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -12354,12 +12636,16 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>FREQM Status</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 30.8.7 l.34993-35009: Access R -->
+              <access>read-only</access>
             </field>
             <field>
               <name>OVF</name>
               <description>Sticky Count Value Overflow</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 30.8.7 l.34989-34992 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -13625,48 +13911,64 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Receive Ready 0</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 51.9.5 l.82495-82508 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>RXRDY1</name>
               <description>Receive Ready 1</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 51.9.5 l.82495-82508 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>RXOR0</name>
               <description>Receive Overrun 0</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 51.9.5 l.82487-82494 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>RXOR1</name>
               <description>Receive Overrun 1</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 51.9.5 l.82487-82494 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TXRDY0</name>
               <description>Transmit Ready 0</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 51.9.5 l.82477-82486 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TXRDY1</name>
               <description>Transmit Ready 1</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 51.9.5 l.82477-82486 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TXUR0</name>
               <description>Transmit Underrun 0</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 51.9.5 l.82469-82476 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TXUR1</name>
               <description>Transmit Underrun 1</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 51.9.5 l.82469-82476 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -14411,6 +14713,8 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Clock Ready</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 15.8.3 l.7255-7270 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -15532,60 +15836,80 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Command Done</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 25.8.6 l.27768-27781 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ADDRE</name>
               <description>Address Error</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 25.8.6 l.27762-27767 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>PROGE</name>
               <description>Programming Error</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 25.8.6 l.27756-27761 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>LOCKE</name>
               <description>Lock Error</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 25.8.6 l.27750-27755 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ECCSE</name>
               <description>ECC Single Error</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 25.8.6 l.27744-27749: Access R -->
+              <access>read-only</access>
             </field>
             <field>
               <name>ECCDE</name>
               <description>ECC Dual Error</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 25.8.6 l.27732-27743: Access R -->
+              <access>read-only</access>
             </field>
             <field>
               <name>NVME</name>
               <description>NVM Error</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 25.8.6 l.27726-27731 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>SUSP</name>
               <description>Suspended Write Or Erase Operation</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 25.8.6 l.27720-27725 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>SEESFULL</name>
               <description>Active SEES Full</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 25.8.6 l.27714-27719 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>SEESOVF</name>
               <description>Active SEES Overflow</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 25.8.6 l.27706-27713 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>SEEWRC</name>
@@ -16240,102 +16564,136 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>XOSC 0 Ready</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 28.8.4 l.32839-32852 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>XOSCRDY1</name>
               <description>XOSC 1 Ready</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 28.8.4 l.32839-32852 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>XOSCFAIL0</name>
               <description>XOSC 0 Clock Failure Detector</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 28.8.4 l.32833-32838 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>XOSCFAIL1</name>
               <description>XOSC 1 Clock Failure Detector</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 28.8.4 l.32833-32838 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DFLLRDY</name>
               <description>DFLL Ready</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 28.8.4 l.32827-32832 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DFLLOOB</name>
               <description>DFLL Out Of Bounds</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 28.8.4 l.32813-32826 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DFLLLCKF</name>
               <description>DFLL Lock Fine</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 28.8.4 l.32805-32812 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DFLLLCKC</name>
               <description>DFLL Lock Coarse</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 28.8.4 l.32799-32804 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DFLLRCS</name>
               <description>DFLL Reference Clock Stopped</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 28.8.4 l.32791-32798 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DPLL0LCKR</name>
               <description>DPLL0 Lock Rise</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 28.8.4 l.32783-32790 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DPLL0LCKF</name>
               <description>DPLL0 Lock Fall</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 28.8.4 l.32777-32782 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DPLL0LTO</name>
               <description>DPLL0 Lock Timeout</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 28.8.4 l.32769-32776 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DPLL0LDRTO</name>
               <description>DPLL0 Loop Divider Ratio Update Complete</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 28.8.4 l.32759-32768 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DPLL1LCKR</name>
               <description>DPLL1 Lock Rise</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 28.8.4 l.32745-32758 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DPLL1LCKF</name>
               <description>DPLL1 Lock Fall</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 28.8.4 l.32737-32744 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DPLL1LTO</name>
               <description>DPLL1 Lock Timeout</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 28.8.4 l.32729-32736 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DPLL1LDRTO</name>
               <description>DPLL1 Loop Divider Ratio Update Complete</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 28.8.4 l.32719-32728 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -17249,12 +17607,16 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>XOSC32K Ready</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 29.8.3 l.34155-34166 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>XOSC32KFAIL</name>
               <description>XOSC32K Clock Failure Detector</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 29.8.3 l.34145-34154 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -17633,84 +17995,112 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>FLASH</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.5 l.30272-30285; datasheet name NVMCTRL0 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>FLASH_ALT_</name>
               <description>FLASH_ALT</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.5 l.30264-30271; datasheet name NVMCTRL1 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>SEEPROM_</name>
               <description>SEEPROM</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.5 l.30250-30263; datasheet name NVMCTRL2 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>RAMCM4S_</name>
               <description>RAMCM4S</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.5 l.30244-30249 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>RAMPPPDSU_</name>
               <description>RAMPPPDSU</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.5 l.30238-30243 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>RAMDMAWR_</name>
               <description>RAMDMAWR</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.5 l.30232-30237 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>RAMDMACICM_</name>
               <description>RAMDMACICM</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.5 l.30226-30231 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>HPB0_</name>
               <description>HPB0</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.5 l.30220-30225 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>HPB1_</name>
               <description>HPB1</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.5 l.30214-30219 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>HPB2_</name>
               <description>HPB2</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.5 l.30208-30213 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>HPB3_</name>
               <description>HPB3</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.5 l.30200-30207 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>PUKCC_</name>
               <description>PUKCC</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.5 l.30186-30199 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>SDHC0_</name>
               <description>SDHC0</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.5 l.30180-30185 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>QSPI_</name>
               <description>QSPI</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.5 l.30168-30173 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>BKUPRAM_</name>
@@ -17732,96 +18122,128 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>PAC</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.6 l.30419-30432 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>PM_</name>
               <description>PM</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.6 l.30413-30418 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>MCLK_</name>
               <description>MCLK</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.6 l.30407-30412 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>RSTC_</name>
               <description>RSTC</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.6 l.30395-30406 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>OSCCTRL_</name>
               <description>OSCCTRL</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.6 l.30389-30394 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>OSC32KCTRL_</name>
               <description>OSC32KCTRL</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.6 l.30383-30388 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>SUPC_</name>
               <description>SUPC</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.6 l.30377-30382 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>GCLK_</name>
               <description>GCLK</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.6 l.30371-30376 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>WDT_</name>
               <description>WDT</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.6 l.30365-30370 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>RTC_</name>
               <description>RTC</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.6 l.30359-30364 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>EIC_</name>
               <description>EIC</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.6 l.30353-30358 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>FREQM_</name>
               <description>FREQM</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.6 l.30345-30352 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>SERCOM0_</name>
               <description>SERCOM0</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.6 l.30333-30344 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>SERCOM1_</name>
               <description>SERCOM1</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.6 l.30325-30332 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TC0_</name>
               <description>TC0</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.6 l.30319-30324 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TC1_</name>
               <description>TC1</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.6 l.30313-30318 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -17837,36 +18259,48 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>USB</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.7 l.30561-30576 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DSU_</name>
               <description>DSU</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.7 l.30549-30560 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>NVMCTRL_</name>
               <description>NVMCTRL</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.7 l.30541-30548 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CMCC_</name>
               <description>CMCC</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.7 l.30535-30540 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>PORT_</name>
               <description>PORT</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.7 l.30529-30534 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DMAC_</name>
               <description>DMAC</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.7 l.30523-30528 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>HMATRIX_</name>
@@ -17879,48 +18313,64 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>EVSYS</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.7 l.30517-30522 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>SERCOM2_</name>
               <description>SERCOM2</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.7 l.30509-30516 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>SERCOM3_</name>
               <description>SERCOM3</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.7 l.30501-30508 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TCC0_</name>
               <description>TCC0</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.7 l.30495-30500 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TCC1_</name>
               <description>TCC1</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.7 l.30483-30494 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TC2_</name>
               <description>TC2</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.7 l.30475-30482 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TC3_</name>
               <description>TC3</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.7 l.30469-30474 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>RAMECC_</name>
               <description>RAMECC</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.7 l.30463-30468 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -17936,84 +18386,112 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>CAN0</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.8 l.30702-30715 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CAN1_</name>
               <description>CAN1</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.8 l.30696-30701 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TCC2_</name>
               <description>TCC2</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.8 l.30678-30683 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TCC3_</name>
               <description>TCC3</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.8 l.30672-30677 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TC4_</name>
               <description>TC4</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.8 l.30666-30671 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TC5_</name>
               <description>TC5</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.8 l.30660-30665 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>PDEC_</name>
               <description>PDEC</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.8 l.30654-30659 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>AC_</name>
               <description>AC</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.8 l.30648-30653 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>AES_</name>
               <description>AES</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.8 l.30642-30647 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TRNG_</name>
               <description>TRNG</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.8 l.30636-30641 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ICM_</name>
               <description>ICM</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.8 l.30624-30635 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>PUKCC_</name>
               <description>PUKCC</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.8 l.30618-30623 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>QSPI_</name>
               <description>QSPI</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.8 l.30612-30617 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CCL_</name>
               <description>CCL</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.8 l.30606-30611 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -18029,48 +18507,64 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>SERCOM4</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.9 l.30821-30836 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>SERCOM5_</name>
               <description>SERCOM5</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.9 l.30815-30820 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TCC4_</name>
               <description>TCC4</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.9 l.30793-30798 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ADC0_</name>
               <description>ADC0</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.9 l.30775-30780 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ADC1_</name>
               <description>ADC1</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.9 l.30763-30774 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DAC_</name>
               <description>DAC</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.9 l.30757-30762 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>I2S_</name>
               <description>I2S</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.9 l.30751-30756 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>PCC_</name>
               <description>PCC</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 27.7.9 l.30745-30750 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -19124,36 +19618,48 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Overflow/Underflow</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 53.8.7 l.85030-85043 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ERR</name>
               <description>Error</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 53.8.7 l.85024-85029 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DIR</name>
               <description>Direction Change</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 53.8.7 l.85016-85023 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>VLC</name>
               <description>Velocity</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 53.8.7 l.85008-85015 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>MC0</name>
               <description>Channel 0 Compare Match</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 53.8.7 l.85000-85007 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>MC1</name>
               <description>Channel 1 Compare Match</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 53.8.7 l.85000-85007 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -19169,42 +19675,56 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Quadrature Error Flag</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 53.8.8 l.85118-85129 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>IDXERR</name>
               <description>Index Error Flag</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 53.8.8 l.85114-85117 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>MPERR</name>
               <description>Missing Pulse Error flag</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 53.8.8 l.85110-85113 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>WINERR</name>
               <description>Window Error Flag</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 53.8.8 l.85106-85109 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>HERR</name>
               <description>Hall Error Flag</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 53.8.8 l.85096-85105 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>STOP</name>
               <description>Stop</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 53.8.8 l.85088-85095: Access R -->
+              <access>read-only</access>
             </field>
             <field>
               <name>DIR</name>
               <description>Direction Status Flag</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 53.8.8 l.85080-85087: Access R -->
+              <access>read-only</access>
             </field>
             <field>
               <name>PRESCBUFV</name>
@@ -19655,6 +20175,8 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Sleep Mode Entry Ready</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 18.8.5 l.9462-9475 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -20597,18 +21119,24 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Overrun Error</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 37.8.8 l.46065-46070 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CSRISE</name>
               <description>Chip Select Rise</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 37.8.8 l.46061-46064 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>INSTREND</name>
               <description>Instruction End</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 37.8.8 l.46055-46060 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -21680,72 +22208,96 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Periodic Interval 0</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.8.6 l.12926-12941 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER1</name>
                 <description>Periodic Interval 1</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.8.6 l.12926-12941 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER2</name>
                 <description>Periodic Interval 2</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.8.6 l.12926-12941 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER3</name>
                 <description>Periodic Interval 3</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.8.6 l.12926-12941 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER4</name>
                 <description>Periodic Interval 4</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.8.6 l.12926-12941 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER5</name>
                 <description>Periodic Interval 5</description>
                 <bitOffset>5</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.8.6 l.12926-12941 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER6</name>
                 <description>Periodic Interval 6</description>
                 <bitOffset>6</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.8.6 l.12926-12941 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER7</name>
                 <description>Periodic Interval 7</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.8.6 l.12926-12941 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>CMP0</name>
                 <description>Compare 0</description>
                 <bitOffset>8</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.8.6 l.12916-12925 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>CMP1</name>
                 <description>Compare 1</description>
                 <bitOffset>9</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.8.6 l.12916-12925 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TAMPER</name>
                 <description>Tamper</description>
                 <bitOffset>14</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.8.6 l.12910-12915 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>OVF</name>
                 <description>Overflow</description>
                 <bitOffset>15</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.8.6 l.12902-12909 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -22152,36 +22704,48 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Tamper Input 0 Detected</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.8.15 l.13328-13341 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TAMPID1</name>
                 <description>Tamper Input 1 Detected</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.8.15 l.13328-13341 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TAMPID2</name>
                 <description>Tamper Input 2 Detected</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.8.15 l.13328-13341 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TAMPID3</name>
                 <description>Tamper Input 3 Detected</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.8.15 l.13328-13341 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TAMPID4</name>
                 <description>Tamper Input 4 Detected</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.8.15 l.13328-13341 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TAMPEVT</name>
                 <description>Tamper Event Detected</description>
                 <bitOffset>31</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.8.15 l.13322-13327 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -22781,84 +23345,112 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Periodic Interval 0</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.6 l.13957-13970 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER1</name>
                 <description>Periodic Interval 1</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.6 l.13957-13970 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER2</name>
                 <description>Periodic Interval 2</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.6 l.13957-13970 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER3</name>
                 <description>Periodic Interval 3</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.6 l.13957-13970 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER4</name>
                 <description>Periodic Interval 4</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.6 l.13957-13970 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER5</name>
                 <description>Periodic Interval 5</description>
                 <bitOffset>5</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.6 l.13957-13970 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER6</name>
                 <description>Periodic Interval 6</description>
                 <bitOffset>6</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.6 l.13957-13970 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER7</name>
                 <description>Periodic Interval 7</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.6 l.13957-13970 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>CMP0</name>
                 <description>Compare 0</description>
                 <bitOffset>8</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.6 l.13949-13956 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>CMP1</name>
                 <description>Compare 1</description>
                 <bitOffset>9</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.6 l.13949-13956 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>CMP2</name>
                 <description>Compare 2</description>
                 <bitOffset>10</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.6 l.13949-13956 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>CMP3</name>
                 <description>Compare 3</description>
                 <bitOffset>11</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.6 l.13949-13956 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TAMPER</name>
                 <description>Tamper</description>
                 <bitOffset>14</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.6 l.13941-13948 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>OVF</name>
                 <description>Overflow</description>
                 <bitOffset>15</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.6 l.13933-13940 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -23298,36 +23890,48 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Tamper Input 0 Detected</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.16 l.14361-14374 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TAMPID1</name>
                 <description>Tamper Input 1 Detected</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.16 l.14361-14374 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TAMPID2</name>
                 <description>Tamper Input 2 Detected</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.16 l.14361-14374 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TAMPID3</name>
                 <description>Tamper Input 3 Detected</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.16 l.14361-14374 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TAMPID4</name>
                 <description>Tamper Input 4 Detected</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.16 l.14361-14374 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TAMPEVT</name>
                 <description>Tamper Event Detected</description>
                 <bitOffset>31</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.10.16 l.14355-14360 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -23903,72 +24507,96 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Periodic Interval 0</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.12.6 l.15012-15027 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER1</name>
                 <description>Periodic Interval 1</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.12.6 l.15012-15027 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER2</name>
                 <description>Periodic Interval 2</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.12.6 l.15012-15027 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER3</name>
                 <description>Periodic Interval 3</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.12.6 l.15012-15027 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER4</name>
                 <description>Periodic Interval 4</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.12.6 l.15012-15027 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER5</name>
                 <description>Periodic Interval 5</description>
                 <bitOffset>5</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.12.6 l.15012-15027 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER6</name>
                 <description>Periodic Interval 6</description>
                 <bitOffset>6</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.12.6 l.15012-15027 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>PER7</name>
                 <description>Periodic Interval 7</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.12.6 l.15012-15027 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>ALARM0</name>
                 <description>Alarm 0</description>
                 <bitOffset>8</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.12.6 l.15002-15011 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>ALARM1</name>
                 <description>Alarm 1</description>
                 <bitOffset>9</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.12.6 l.15002-15011 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TAMPER</name>
                 <description>Tamper</description>
                 <bitOffset>14</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.12.6 l.14996-15001 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>OVF</name>
                 <description>Overflow</description>
                 <bitOffset>15</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.12.6 l.14988-14995 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -24678,36 +25306,48 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Tamper Input 0 Detected</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.12.16 l.15515-15528 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TAMPID1</name>
                 <description>Tamper Input 1 Detected</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.12.16 l.15515-15528 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TAMPID2</name>
                 <description>Tamper Input 2 Detected</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.12.16 l.15515-15528 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TAMPID3</name>
                 <description>Tamper Input 3 Detected</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.12.16 l.15515-15528 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TAMPID4</name>
                 <description>Tamper Input 4 Detected</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.12.16 l.15515-15528 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TAMPEVT</name>
                 <description>Tamper Event Detected</description>
                 <bitOffset>31</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 21.12.16 l.15509-15514 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -26039,6 +26679,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.17 l.57083-57111 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TRFC</name>
@@ -26058,6 +26700,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.17 l.57048-57082 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>BLKGE</name>
@@ -26077,6 +26721,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.17 l.57031-57047 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DMAINT</name>
@@ -26096,6 +26742,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.17 l.57021-57030 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>BWRRDY</name>
@@ -26115,6 +26763,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.17 l.57005-57020 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>BRDRDY</name>
@@ -26134,6 +26784,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.17 l.56997-57004 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CINS</name>
@@ -26153,6 +26805,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.17 l.56985-56996 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CREM</name>
@@ -26172,6 +26826,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.17 l.56966-56984 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CINT</name>
@@ -26210,6 +26866,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.17 l.56925-56930: "This bit is read-only" (the table says R/W) -->
+              <access>read-only</access>
             </field>
           </fields>
         </register>
@@ -26239,6 +26897,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.17 l.57083-57111 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TRFC</name>
@@ -26258,6 +26918,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.17 l.57048-57082 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>BLKGE</name>
@@ -26277,6 +26939,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.17 l.57031-57047 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DMAINT</name>
@@ -26296,6 +26960,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.17 l.57021-57030 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>BWRRDY</name>
@@ -26315,6 +26981,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.17 l.57005-57020 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>BRDRDY</name>
@@ -26334,12 +27002,16 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.17 l.56997-57004 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>BOOTAR</name>
               <description>Boot Acknowledge Received</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 40.8.17 l.56931-56940 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ERRINT</name>
@@ -26359,6 +27031,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.17 l.56925-56930: "This bit is read-only" (the table says R/W) -->
+              <access>read-only</access>
             </field>
           </fields>
         </register>
@@ -26387,6 +27061,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57280-57304 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CMDCRC</name>
@@ -26406,6 +27082,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57272-57279 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CMDEND</name>
@@ -26425,6 +27103,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57257-57271 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CMDIDX</name>
@@ -26444,6 +27124,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57244-57256 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DATTEO</name>
@@ -26463,6 +27145,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57217-57243 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DATCRC</name>
@@ -26482,6 +27166,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57204-57216 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DATEND</name>
@@ -26501,6 +27187,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57189-57203 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CURLIM</name>
@@ -26520,6 +27208,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57176-57188 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ACMD</name>
@@ -26539,6 +27229,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57160-57175 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ADMA</name>
@@ -26558,6 +27250,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57145-57159 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -26587,6 +27281,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57280-57304 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CMDCRC</name>
@@ -26606,6 +27302,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57272-57279 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CMDEND</name>
@@ -26625,6 +27323,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57257-57271 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CMDIDX</name>
@@ -26644,6 +27344,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57244-57256 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DATTEO</name>
@@ -26663,6 +27365,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57217-57243 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DATCRC</name>
@@ -26682,6 +27386,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57204-57216 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DATEND</name>
@@ -26701,6 +27407,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57189-57203 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CURLIM</name>
@@ -26720,6 +27428,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57176-57188 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ACMD</name>
@@ -26739,6 +27449,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57160-57175 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ADMA</name>
@@ -26758,6 +27470,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57145-57159 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>BOOTAE</name>
@@ -26777,6 +27491,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+              <!-- Kvasir: DS60001507N 40.8.18 l.57128-57144 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -30376,18 +31092,24 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Master On Bus Interrupt</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.10.7 l.44390-44409 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>SB</name>
                 <description>Slave On Bus Interrupt</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.10.7 l.44376-44389 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>ERROR</name>
                 <description>Combined Error Interrupt</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.10.7 l.44368-44375 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -30403,18 +31125,24 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Bus Error</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.10.8 l.44498-44511 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>ARBLOST</name>
                 <description>Arbitration Lost</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.10.8 l.44492-44497 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>RXNACK</name>
                 <description>Received Not Acknowledge</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.10.8 l.44417 (Access R), l.44481-44491 -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>BUSSTATE</name>
@@ -30450,30 +31178,40 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>SCL Low Timeout</description>
                 <bitOffset>6</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.10.8 l.44451-44464 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>CLKHOLD</name>
                 <description>Clock Hold</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.10.8 l.44417 (Access R), l.44443-44450 -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>MEXTTOUT</name>
                 <description>Master SCL Low Extend Timeout</description>
                 <bitOffset>8</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.10.8 l.44435-44442 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>SEXTTOUT</name>
                 <description>Slave SCL Low Extend Timeout</description>
                 <bitOffset>9</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.10.8 l.44427-44434 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>LENERR</name>
                 <description>Length Error</description>
                 <bitOffset>10</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.10.8 l.44419-44426 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -30887,24 +31625,32 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Stop Received Interrupt</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.8.6 l.43495-43506 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>AMATCH</name>
                 <description>Address Match Interrupt</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.8.6 l.43485-43494 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>DRDY</name>
                 <description>Data Interrupt</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.8.6 l.43469-43484 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>ERROR</name>
                 <description>Combined Error Interrupt</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.8.6 l.43461-43468 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -30920,60 +31666,80 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Bus Error</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.8.7 l.43622-43647 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>COLL</name>
                 <description>Transmit Collision</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.8.7 l.43609-43621 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>RXNACK</name>
                 <description>Received Not Acknowledge</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.8.7 l.43598-43608: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>DIR</name>
                 <description>Read/Write Direction</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.8.7 l.43592-43597: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>SR</name>
                 <description>Repeated Start</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.8.7 l.43584-43591: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>LOWTOUT</name>
                 <description>SCL Low Timeout</description>
                 <bitOffset>6</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.8.7 l.43561-43583 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>CLKHOLD</name>
                 <description>Clock Hold</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.8.7 l.43555-43560: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>SEXTTOUT</name>
                 <description>Slave SCL Low Extend Timeout</description>
                 <bitOffset>9</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.8.7 l.43543-43554 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>HS</name>
                 <description>High Speed</description>
                 <bitOffset>10</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.8.7 l.43537-43542 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>LENERR</name>
                 <description>Transaction Length Error</description>
                 <bitOffset>11</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 36.8.7 l.43525-43536 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -31492,30 +32258,40 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Data Register Empty Interrupt</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 35.8.7 l.41705-41718: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>TXC</name>
                 <description>Transmit Complete Interrupt</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 35.8.7 l.41695-41704 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>RXC</name>
                 <description>Receive Complete Interrupt</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 35.8.7 l.41687-41694: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>SSL</name>
                 <description>Slave Select Low Interrupt Flag</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 35.8.7 l.41679-41686 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>ERROR</name>
                 <description>Combined Error Interrupt</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 35.8.7 l.41673-41678 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -31531,12 +32307,16 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Buffer Overflow</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 35.8.8 l.41741-41759 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>LENERR</name>
                 <description>Transaction Length Error</description>
                 <bitOffset>11</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 35.8.8 l.41728-41740 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -32028,30 +32808,40 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Data Register Empty Interrupt</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 35.8.7 l.41705-41718: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>TXC</name>
                 <description>Transmit Complete Interrupt</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 35.8.7 l.41695-41704 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>RXC</name>
                 <description>Receive Complete Interrupt</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 35.8.7 l.41687-41694: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>SSL</name>
                 <description>Slave Select Low Interrupt Flag</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 35.8.7 l.41679-41686 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>ERROR</name>
                 <description>Combined Error Interrupt</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 35.8.7 l.41673-41678 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -32067,12 +32857,16 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Buffer Overflow</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 35.8.8 l.41741-41759 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>LENERR</name>
                 <description>Transaction Length Error</description>
                 <bitOffset>11</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 35.8.8 l.41728-41740 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -32866,42 +33660,56 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Data Register Empty Interrupt</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 34.8.8 l.40070-40095: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>TXC</name>
                 <description>Transmit Complete Interrupt</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 34.8.8 l.40060-40069 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>RXC</name>
                 <description>Receive Complete Interrupt</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 34.8.8 l.40050-40059: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>RXS</name>
                 <description>Receive Start Interrupt</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 34.8.8 l.40040-40049 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>CTSIC</name>
                 <description>Clear To Send Input Change Interrupt</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 34.8.8 l.40032-40039 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>RXBRK</name>
                 <description>Break Received Interrupt</description>
                 <bitOffset>5</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 34.8.8 l.40026-40031 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>ERROR</name>
                 <description>Combined Error Interrupt</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 34.8.8 l.40020-40025 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -32917,48 +33725,64 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Parity Error</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 34.8.9 l.40172-40193 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>FERR</name>
                 <description>Frame Error</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 34.8.9 l.40162-40171 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>BUFOVF</name>
                 <description>Buffer Overflow</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 34.8.9 l.40144-40161 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>CTS</name>
                 <description>Clear To Send</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 34.8.9 l.40140-40143: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>ISF</name>
                 <description>Inconsistent Sync Field</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 34.8.9 l.40130-40139 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>COLL</name>
                 <description>Collision Detected</description>
                 <bitOffset>5</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 34.8.9 l.40124-40129 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>TXE</name>
                 <description>Transmitter Empty</description>
                 <bitOffset>6</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 34.8.9 l.40118-40123 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>ITER</name>
                 <description>Maximum Number of Repetitions Reached</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 34.8.9 l.40110-40117 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -33275,30 +34099,40 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>BOD33 Ready</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 19.8.3 l.10378-10395 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>BOD33DET</name>
               <description>BOD33 Detection</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 19.8.3 l.10364-10377 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>B33SRDY</name>
               <description>BOD33 Synchronization Ready</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 19.8.3 l.10356-10363 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>VREGRDY</name>
               <description>Voltage Regulator Ready</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 19.8.3 l.10348-10355 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>VCORERDY</name>
               <description>VDDCORE Ready</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 19.8.3 l.10340-10347 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -34260,24 +35094,32 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>OVF Interrupt Flag</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.1.7 l.75316-75327 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>ERR</name>
                 <description>ERR Interrupt Flag</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.1.7 l.75310-75315 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>MC0</name>
                 <description>MC Interrupt Flag 0</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.1.7 l.75300-75309 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>MC1</name>
                 <description>MC Interrupt Flag 1</description>
                 <bitOffset>5</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.1.7 l.75290-75299 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -34293,30 +35135,40 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Stop Status Flag</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.1.8 l.75358-75369: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>SLAVE</name>
                 <description>Slave Status Flag</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.1.8 l.75354-75357: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>PERBUFV</name>
                 <description>Synchronization Busy Status</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.1.8 l.75350-75353 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>CCBUFV0</name>
                 <description>Compare channel buffer 0 valid</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.1.8 l.75342-75349; cleared by a 1 only while CTRLB.LUPD is set -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>CCBUFV1</name>
                 <description>Compare channel buffer 1 valid</description>
                 <bitOffset>5</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.1.8 l.75342-75349; cleared by a 1 only while CTRLB.LUPD is set -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -35044,24 +35896,32 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>OVF Interrupt Flag</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.2.7 l.76259-76270 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>ERR</name>
                 <description>ERR Interrupt Flag</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.2.7 l.76253-76258 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>MC0</name>
                 <description>MC Interrupt Flag 0</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.2.7 l.76243-76252 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>MC1</name>
                 <description>MC Interrupt Flag 1</description>
                 <bitOffset>5</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.2.7 l.76233-76242 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -35077,30 +35937,40 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Stop Status Flag</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.2.8 l.76301-76312: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>SLAVE</name>
                 <description>Slave Status Flag</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.2.8 l.76297-76300: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>PERBUFV</name>
                 <description>Synchronization Busy Status</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.2.8 l.76293-76296 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>CCBUFV0</name>
                 <description>Compare channel buffer 0 valid</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.2.8 l.76285-76292; cleared by a 1 only while CTRLB.LUPD is set -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>CCBUFV1</name>
                 <description>Compare channel buffer 1 valid</description>
                 <bitOffset>5</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.2.8 l.76285-76292; cleared by a 1 only while CTRLB.LUPD is set -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -35798,24 +36668,32 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>OVF Interrupt Flag</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.3.7 l.77180-77191 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>ERR</name>
                 <description>ERR Interrupt Flag</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.3.7 l.77174-77179 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>MC0</name>
                 <description>MC Interrupt Flag 0</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.3.7 l.77164-77173 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>MC1</name>
                 <description>MC Interrupt Flag 1</description>
                 <bitOffset>5</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.3.7 l.77154-77163 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -35831,30 +36709,40 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Stop Status Flag</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.3.8 l.77222-77233: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>SLAVE</name>
                 <description>Slave Status Flag</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.3.8 l.77218-77221: Access R -->
+                <access>read-only</access>
               </field>
               <field>
                 <name>PERBUFV</name>
                 <description>Synchronization Busy Status</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.3.8 l.77214-77217 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>CCBUFV0</name>
                 <description>Compare channel buffer 0 valid</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.3.8 l.77206-77213; cleared by a 1 only while CTRLB.LUPD is set -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>CCBUFV1</name>
                 <description>Compare channel buffer 1 valid</description>
                 <bitOffset>5</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 48.7.3.8 l.77206-77213; cleared by a 1 only while CTRLB.LUPD is set -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -37719,96 +38607,128 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Overflow</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.12 l.80507-80518 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>TRG</name>
               <description>Retrigger</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.12 l.80501-80506 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CNT</name>
               <description>Counter</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.12 l.80495-80500 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>ERR</name>
               <description>Error</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.12 l.80491-80494 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>UFS</name>
               <description>Non-Recoverable Update Fault</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.12 l.80485-80490 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DFS</name>
               <description>Non-Recoverable Debug Fault</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.12 l.80479-80484 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>FAULTA</name>
               <description>Recoverable Fault A</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.12 l.80471-80478 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>FAULTB</name>
               <description>Recoverable Fault B</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.12 l.80457-80470 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>FAULT0</name>
               <description>Non-Recoverable Fault 0</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.12 l.80449-80456 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>FAULT1</name>
               <description>Non-Recoverable Fault 1</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.12 l.80441-80448 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>MC0</name>
               <description>Match or Capture 0</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.12 l.80431-80440 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>MC1</name>
               <description>Match or Capture 1</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.12 l.80431-80440 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>MC2</name>
               <description>Match or Capture 2</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.12 l.80431-80440 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>MC3</name>
               <description>Match or Capture 3</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.12 l.80431-80440 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>MC4</name>
               <description>Match or Capture 4</description>
               <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.12 l.80431-80440 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>MC5</name>
               <description>Match or Capture 5</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.12 l.80431-80440 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -37824,126 +38744,168 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Stop</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80628-80644: Access R -->
+              <access>read-only</access>
             </field>
             <field>
               <name>IDX</name>
               <description>Ramp</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80624-80627: Access R -->
+              <access>read-only</access>
             </field>
             <field>
               <name>UFS</name>
               <description>Non-recoverable Update Fault State</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80618-80623 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>DFS</name>
               <description>Non-Recoverable Debug Fault State</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80614-80617 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>SLAVE</name>
               <description>Slave</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80610-80613: Access R -->
+              <access>read-only</access>
             </field>
             <field>
               <name>PATTBUFV</name>
               <description>Pattern Buffer Valid</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80606-80609 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>PERBUFV</name>
               <description>Period Buffer Valid</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80602-80605 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>FAULTAIN</name>
               <description>Recoverable Fault A Input</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80598-80601: Access R -->
+              <access>read-only</access>
             </field>
             <field>
               <name>FAULTBIN</name>
               <description>Recoverable Fault B Input</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80594-80597: Access R -->
+              <access>read-only</access>
             </field>
             <field>
               <name>FAULT0IN</name>
               <description>Non-Recoverable Fault0 Input</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80590-80593: Access R -->
+              <access>read-only</access>
             </field>
             <field>
               <name>FAULT1IN</name>
               <description>Non-Recoverable Fault1 Input</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80586-80589: Access R -->
+              <access>read-only</access>
             </field>
             <field>
               <name>FAULTA</name>
               <description>Recoverable Fault A State</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80580-80585 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>FAULTB</name>
               <description>Recoverable Fault B State</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80568-80579 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>FAULT0</name>
               <description>Non-Recoverable Fault 0 State</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80562-80567 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>FAULT1</name>
               <description>Non-Recoverable Fault 1 State</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80562-80567 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CCBUFV0</name>
               <description>Compare Channel 0 Buffer Valid</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80556-80561 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CCBUFV1</name>
               <description>Compare Channel 1 Buffer Valid</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80556-80561 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CCBUFV2</name>
               <description>Compare Channel 2 Buffer Valid</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80556-80561 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CCBUFV3</name>
               <description>Compare Channel 3 Buffer Valid</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80556-80561 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CCBUFV4</name>
               <description>Compare Channel 4 Buffer Valid</description>
               <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80556-80561 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CCBUFV5</name>
               <description>Compare Channel 5 Buffer Valid</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 49.8.13 l.80556-80561 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
             <field>
               <name>CMP0</name>
@@ -38941,6 +39903,8 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Data Ready Interrupt Flag</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 44.8.5 l.68514-68529 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>
@@ -39511,6 +40475,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Suspend</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 38.8.7 l.48056-48071 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>MSOF</name>
@@ -39523,48 +40489,64 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Start Of Frame</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 38.8.7 l.48046-48055 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>EORST</name>
                 <description>End of Reset</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 38.8.7 l.48038-48045 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>WAKEUP</name>
                 <description>Wake Up</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 38.8.7 l.48024-48037 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>EORSM</name>
                 <description>End Of Resume</description>
                 <bitOffset>5</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 38.8.7 l.48016-48023 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>UPRSM</name>
                 <description>Upstream Resume</description>
                 <bitOffset>6</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 38.8.7 l.48010-48015 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>RAMACER</name>
                 <description>Ram Access</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 38.8.7 l.48004-48009 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>LPMNYET</name>
                 <description>Link Power Management Not Yet</description>
                 <bitOffset>8</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 38.8.7 l.47996-48003 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>LPMSUSP</name>
                 <description>Link Power Management Suspend</description>
                 <bitOffset>9</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 38.8.7 l.47986-47995 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -39869,42 +40851,56 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <description>Transfer Complete 0</description>
                   <bitOffset>0</bitOffset>
                   <bitWidth>1</bitWidth>
+                  <!-- Kvasir: DS60001507N 38.9.5 l.48476-48489 -->
+                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
                 </field>
                 <field>
                   <name>TRCPT1</name>
                   <description>Transfer Complete 1</description>
                   <bitOffset>1</bitOffset>
                   <bitWidth>1</bitWidth>
+                  <!-- Kvasir: DS60001507N 38.9.5 l.48476-48489 -->
+                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
                 </field>
                 <field>
                   <name>TRFAIL0</name>
                   <description>Error Flow 0</description>
                   <bitOffset>2</bitOffset>
                   <bitWidth>1</bitWidth>
+                  <!-- Kvasir: DS60001507N 38.9.5 l.48466-48475 -->
+                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
                 </field>
                 <field>
                   <name>TRFAIL1</name>
                   <description>Error Flow 1</description>
                   <bitOffset>3</bitOffset>
                   <bitWidth>1</bitWidth>
+                  <!-- Kvasir: DS60001507N 38.9.5 l.48466-48475 -->
+                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
                 </field>
                 <field>
                   <name>RXSTP</name>
                   <description>Received Setup</description>
                   <bitOffset>4</bitOffset>
                   <bitWidth>1</bitWidth>
+                  <!-- Kvasir: DS60001507N 38.9.5 l.48456-48465 -->
+                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
                 </field>
                 <field>
                   <name>STALL0</name>
                   <description>Stall 0 In/out</description>
                   <bitOffset>5</bitOffset>
                   <bitWidth>1</bitWidth>
+                  <!-- Kvasir: DS60001507N 38.9.5 l.48444-48455 -->
+                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
                 </field>
                 <field>
                   <name>STALL1</name>
                   <description>Stall 1 In/out</description>
                   <bitOffset>6</bitOffset>
                   <bitWidth>1</bitWidth>
+                  <!-- Kvasir: DS60001507N 38.9.5 l.48444-48455 -->
+                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
                 </field>
               </fields>
             </register>
@@ -40442,48 +41438,64 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Host Start Of Frame</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 38.12.8 l.49386-49401 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>RST</name>
                 <description>Bus Reset</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 38.12.8 l.49378-49385 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>WAKEUP</name>
                 <description>Wake Up</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 38.12.8 l.49358-49377 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>DNRSM</name>
                 <description>Downstream</description>
                 <bitOffset>5</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 38.12.8 l.49350-49357 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>UPRSM</name>
                 <description>Upstream Resume from the Device</description>
                 <bitOffset>6</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 38.12.8 l.49344-49349 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>RAMACER</name>
                 <description>Ram Access</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 38.12.8 l.49336-49343 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>DCONN</name>
                 <description>Device Connection</description>
                 <bitOffset>8</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 38.12.8 l.49326-49335 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
               <field>
                 <name>DDISC</name>
                 <description>Device Disconnection</description>
                 <bitOffset>9</bitOffset>
                 <bitWidth>1</bitWidth>
+                <!-- Kvasir: DS60001507N 38.12.8 l.49316-49325 -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -40767,36 +41779,48 @@ Copyright (c) 2017 Microchip Technology Inc.
                   <description>Transfer Complete 0 Interrupt Flag</description>
                   <bitOffset>0</bitOffset>
                   <bitWidth>1</bitWidth>
+                  <!-- Kvasir: DS60001507N 38.13.6 l.49878-49893 -->
+                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
                 </field>
                 <field>
                   <name>TRCPT1</name>
                   <description>Transfer Complete 1 Interrupt Flag</description>
                   <bitOffset>1</bitOffset>
                   <bitWidth>1</bitWidth>
+                  <!-- Kvasir: DS60001507N 38.13.6 l.49878-49893 -->
+                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
                 </field>
                 <field>
                   <name>TRFAIL</name>
                   <description>Error Flow Interrupt Flag</description>
                   <bitOffset>2</bitOffset>
                   <bitWidth>1</bitWidth>
+                  <!-- Kvasir: DS60001507N 38.13.6 l.49868-49877 -->
+                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
                 </field>
                 <field>
                   <name>PERR</name>
                   <description>Pipe Error Interrupt Flag</description>
                   <bitOffset>3</bitOffset>
                   <bitWidth>1</bitWidth>
+                  <!-- Kvasir: DS60001507N 38.13.6 l.49858-49867 -->
+                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
                 </field>
                 <field>
                   <name>TXSTP</name>
                   <description>Transmit  Setup Interrupt Flag</description>
                   <bitOffset>4</bitOffset>
                   <bitWidth>1</bitWidth>
+                  <!-- Kvasir: DS60001507N 38.13.6 l.49848-49857 -->
+                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
                 </field>
                 <field>
                   <name>STALL</name>
                   <description>Stall Interrupt Flag</description>
                   <bitOffset>5</bitOffset>
                   <bitWidth>1</bitWidth>
+                  <!-- Kvasir: DS60001507N 38.13.6 l.49840-49847 -->
+                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
                 </field>
               </fields>
             </register>
@@ -41205,6 +42229,8 @@ Copyright (c) 2017 Microchip Technology Inc.
               <description>Early Warning</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+              <!-- Kvasir: DS60001507N 20.8.6 l.11524-11541 -->
+              <modifiedWriteValues>oneToClear</modifiedWriteValues>
             </field>
           </fields>
         </register>

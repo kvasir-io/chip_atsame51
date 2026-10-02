@@ -2,6 +2,7 @@
 #include "kvasir/Common/Interrupt.hpp"
 
 #include <array>
+#include <type_traits>
 
 namespace Kvasir {
 namespace Interrupt {
@@ -142,6 +143,12 @@ namespace Interrupt {
     static constexpr Type<132> icm{};
     static constexpr Type<134> qspi{};
     static constexpr Type<135> sdhc0{};
+
+    // The vector that serves EXTINT line n: a line each, EXTINT 0 on 12 to EXTINT 15 on 27
+    // (DS60001507N Table 10-1, md lines 2785-2800).
+    template<unsigned Line>
+    using EicExtIntVector
+      = Type<std::remove_cvref_t<decltype(eic_extint_0)>::value + static_cast<int>(Line)>;
 }   // namespace Interrupt
 
 namespace Nvic {

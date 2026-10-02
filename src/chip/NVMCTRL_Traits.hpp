@@ -12,12 +12,10 @@ namespace Kvasir { namespace NVMCTRL { namespace Traits {
     static inline bool ready() { return 0 != apply(read(NVM::STATUS::ready)); }
 
     /// The error flags are sticky and a set one does not block the next command, but it would be
-    /// read back as that command's result; INTFLAG bits are cleared by writing a one.
+    /// read back as that command's result; INTFLAG bits are cleared by writing a one. ECCSE is
+    /// read-only, cleared by reading ECCERR (DS60001507N 25.8.6), so it is not touched here.
     static inline void clear_flags() {
-        apply(set(NVM::INTFLAG::addre),
-              set(NVM::INTFLAG::proge),
-              set(NVM::INTFLAG::done),
-              set(NVM::INTFLAG::eccse));
+        apply(reset(NVM::INTFLAG::addre), reset(NVM::INTFLAG::proge), reset(NVM::INTFLAG::done));
     }
 
     static inline void command_write_page() {
