@@ -14,7 +14,20 @@ set(TARGET_UF2_CODE 0x55114460)
 
 set(LINKER_FILE ${CMAKE_CURRENT_LIST_DIR}/../linker/chip.ld)
 
-svd_convert(peripherals SVD_FILE ${CMAKE_CURRENT_LIST_DIR}/../chip.svd OUTPUT_DIRECTORY peripherals)
+# The write-only guard: every write-only field of the SVD is classified (oneToSet, a key, or <!-- Kvasir: write-only
+# accepted -->), so a new one stops the build; registers with no readable field are never read
+svd_convert(
+    peripherals
+    SVD_FILE
+    ${CMAKE_CURRENT_LIST_DIR}/../chip.svd
+    OUTPUT_DIRECTORY
+    peripherals
+    WRITE_ONLY_GUARD
+    error
+    WRITE_ONLY_REGISTERS
+    derived
+    WRITE_ONLY_MASK
+    ON)
 
 # kvasir_devices: chip.hpp includes its drivers unconditionally (Sercom_I2CQueued.hpp ->
 # kvasir/Devices/I2C/LineRecovery.hpp), so every image needs it. Found like CHIP_ROOT (KVASIR_DEVICES_ROOT: variable,

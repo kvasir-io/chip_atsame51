@@ -24,3 +24,20 @@ add_executable(clock_limits clock_limits_test.cpp)
 target_include_directories(clock_limits PRIVATE ${KVASIR_ROOT}/src ${_chip_src})
 target_compile_options(clock_limits PRIVATE -Wall -Wextra -Wpedantic -Werror)
 add_test(NAME clock_limits COMMAND clock_limits)
+
+# The write-only guard: every write-only field of this chip's SVD(s) is classified (oneToSet, a key, or <!-- Kvasir:
+# write-only accepted -->), so svd_converter --write-only-guard=error must exit 0. Needs the SDK's svd_converter (the
+# sibling checkout's submodule); left out without it.
+if(EXISTS ${KVASIR_ROOT}/svd_converter/CMakeLists.txt)
+    add_subdirectory(${KVASIR_ROOT}/svd_converter svd_converter)
+    foreach(svd chip.svd)
+        string(MAKE_C_IDENTIFIER ${svd} _svd_name)
+        file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/write_only_guard/${_svd_name})
+        add_test(
+            NAME svd_write_only_guard_${_svd_name}
+            COMMAND svd_converter --write-only-guard=error --write-only-registers=derived
+                    ${CMAKE_CURRENT_LIST_DIR}/../${svd} ${CMAKE_CURRENT_BINARY_DIR}/write_only_guard/${_svd_name} json)
+    endforeach()
+else()
+    message(STATUS "svd_write_only_guard left out: no ${KVASIR_ROOT}/svd_converter")
+endif()
