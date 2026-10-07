@@ -55,11 +55,6 @@ entry points that touch MSPLIM are only instantiated for a secondary core's stac
   `CHANNEL_TRIG`; this part carries the later one with indexed `CHANNEL[n]`/`USER[n]`.
 - **The fuses.** `atsam_common/Fuses.hpp` uses the D21's NVM user-row layout. The user row here
   is laid out differently (9.4) and is erased by page, not by block (25.6.2).
-- **The bootloader, by itself.** `atsam_common/Bootloader.hpp` is not in `chip.hpp`: it includes
-  `kvasir/Util/Can.hpp`, `kvasir/Util/Bootloader_td.hpp` and (for the bootloader proper)
-  `kvasir/Util/Bootloader.hpp`, which the SDK no longer has. smart_hive keeps copies under its
-  own `src/kvasir/Util/` and includes `chip/atsam_common/Bootloader.hpp` itself; with those on
-  the include path it works as it is.
 
 ## Status
 

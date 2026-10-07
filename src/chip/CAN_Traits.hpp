@@ -13,18 +13,9 @@ namespace Kvasir { namespace CAN { namespace Traits {
         static constexpr int                canInstanceEnd    = 2;
         static constexpr std::array<int, 0> disabledInstances = {{}};
 
+        // specialised below the class: gcc takes no explicit specialisation in class scope
         template<unsigned Instance>
         struct IsrIndex;
-
-        template<>
-        struct IsrIndex<0> {
-            using Type = brigand::list<decltype(Kvasir::Interrupt::can0)>;
-        };
-
-        template<>
-        struct IsrIndex<1> {
-            using Type = brigand::list<decltype(Kvasir::Interrupt::can1)>;
-        };
 
         // SAM D5x/E5x data sheet (DS60001507N) Table 6-1: CAN0 is peripheral function I (mux 8),
         // CAN1 is H (mux 7).
@@ -40,6 +31,16 @@ namespace Kvasir { namespace CAN { namespace Traits {
           PinInfo{1, 1, 14, 7, PinInfo::TX},
           PinInfo{1, 1, 15, 7, PinInfo::RX}
         };
+    };
+
+    template<>
+    struct CanTraits::IsrIndex<0> {
+        using Type = brigand::list<decltype(Kvasir::Interrupt::can0)>;
+    };
+
+    template<>
+    struct CanTraits::IsrIndex<1> {
+        using Type = brigand::list<decltype(Kvasir::Interrupt::can1)>;
     };
 
 }}}   // namespace Kvasir::CAN::Traits
