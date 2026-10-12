@@ -146,4 +146,11 @@ namespace Kvasir { namespace GCLK {
         }
     };
 
+    // The SAM D21/C21 packages move GCLK0 to their RC oscillator here before the clock tree is rewritten (a
+    // bootloader or self jump may leave it on a source about to be reprogrammed). Not done for the E5x yet.
+    inline void parkMainClock() {}
+
+    // The D21/C21 packages restart an image at flash address 0 that did not start from a reset (atsam_common
+    // StartUp.hpp); for the E5x that check is not written yet: every start counts as one after a reset.
+    inline bool looksLikeAfterReset() { return true; }
 }}   // namespace Kvasir::GCLK
