@@ -20,12 +20,16 @@ namespace Kvasir { namespace NVMCTRL { namespace Traits {
     /// what was read is written back. ADDRE counts as a program error (an address command "fails with PROGE while
     /// ADDRE is set", 25.6.6).
     static inline std::uint8_t takeErrors() {
-        auto const flags
-          = static_cast<std::uint16_t>(get<0>(apply(read(NVM::INTFLAG::FULLREGISTER))) & 0x4FU);
+        static constexpr std::uint16_t Errors = NVM::INTFLAG::done.Mask | NVM::INTFLAG::addre.Mask
+                                              | NVM::INTFLAG::proge.Mask | NVM::INTFLAG::locke.Mask
+                                              | NVM::INTFLAG::nvme.Mask;
+        auto const                     flags
+          = static_cast<std::uint16_t>(get<0>(apply(read(NVM::INTFLAG::FULLREGISTER))) & Errors);
         if(flags != 0) { apply(write(NVM::INTFLAG::FULLREGISTER, flags)); }
-        return Kvasir::Nvm::Detail::bits((flags & 0x08U) != 0,
-                                         (flags & 0x06U) != 0,
-                                         (flags & 0x40U) != 0);
+        return Kvasir::Nvm::Detail::bits(
+          (flags & NVM::INTFLAG::locke.Mask) != 0,
+          (flags & (NVM::INTFLAG::addre.Mask | NVM::INTFLAG::proge.Mask)) != 0,
+          (flags & NVM::INTFLAG::nvme.Mask) != 0);
     }
 
     // tFEB (block erase) max 200 ms, tFPW (page write) max 3 ms (DS60001507N Table 54-40, md l.86663-86665; "based
