@@ -20401,6 +20401,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Port Data Direction Clear</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>32</bitWidth>
+                <!-- Kvasir: DS60001507N 32.8.2 md l.36958: "Writing a '0' to a bit has no effect", a 1 clears that bit of DIR -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -20416,6 +20418,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Port Data Direction Set</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>32</bitWidth>
+                <!-- Kvasir: DS60001507N 32.8.3 md l.37003: "Writing a '0' to a bit has no effect", a 1 sets that bit of DIR -->
+                <modifiedWriteValues>oneToSet</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -20431,6 +20435,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Port Data Direction Toggle</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>32</bitWidth>
+                <!-- Kvasir: DS60001507N 32.8.4 md l.37045: "Writing a '0' to a bit has no effect", a 1 toggles that bit of DIR -->
+                <modifiedWriteValues>oneToToggle</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -20461,6 +20467,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>PORT Data Output Value Clear</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>32</bitWidth>
+                <!-- Kvasir: DS60001507N 32.8.6 md l.37136: "Writing a '0' to a bit has no effect", a 1 clears that bit of OUT -->
+                <modifiedWriteValues>oneToClear</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -20476,6 +20484,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>PORT Data Output Value Set</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>32</bitWidth>
+                <!-- Kvasir: DS60001507N 32.8.7 md l.37178: "Writing a '0' to a bit has no effect", a 1 sets that bit of OUT -->
+                <modifiedWriteValues>oneToSet</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -20491,6 +20501,8 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>PORT Data Output Value Toggle</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>32</bitWidth>
+                <!-- Kvasir: DS60001507N 32.8.8 md l.37218: "Writing a '0' to a bit has no effect", a 1 toggles that bit of OUT -->
+                <modifiedWriteValues>oneToToggle</modifiedWriteValues>
               </field>
             </fields>
           </register>
@@ -33867,6 +33879,21 @@ Copyright (c) 2017 Microchip Technology Inc.
                 <description>Data Value</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>32</bitWidth>
+              </field>
+            </fields>
+          </register>
+          <!-- Kvasir: the 8-bit view of DATA the SERCOM drivers read and point the DMAC at, as the SPI cluster has; DS60001507N 34.8.13 l.40347 (DATA, 0x28) and 34.8 l.39183 (8-bit access to a register) -->
+          <register>
+            <name>DATA8</name>
+            <description>USART Data, low byte</description>
+            <addressOffset>0x28</addressOffset>
+            <size>8</size>
+            <fields>
+              <field>
+                <name>DATA</name>
+                <description>Data Value</description>
+                <bitOffset>0</bitOffset>
+                <bitWidth>8</bitWidth>
               </field>
             </fields>
           </register>

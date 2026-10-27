@@ -1,6 +1,4 @@
 #pragma once
-#include "Interrupt.hpp"
-#include "chip/atsam_common/DMAC.hpp"
 #include "chip/atsam_common/Sercom_Common.hpp"
 #include "kvasir/Io/Types.hpp"
 
@@ -8,109 +6,7 @@
 
 namespace Kvasir { namespace Sercom { namespace Traits {
 
-    namespace detail {
-
-        // Four NVIC lines per SERCOM (data sheet Table 10-1): interrupt flags 0, 1 and 2 have a
-        // line each, and 3, 4, 5 and 7 share the fourth. All four are listed, because which flag
-        // means what depends on the mode - the I2C master's ERROR is flag 7, so it arrives on
-        // the shared line, while its MB and SB are lines 0 and 1.
-        template<unsigned Instance>
-        struct IsrIndex;
-
-        template<>
-        struct IsrIndex<0> {
-            using Type = brigand::list<decltype(Kvasir::Interrupt::sercom0_0),
-                                       decltype(Kvasir::Interrupt::sercom0_1),
-                                       decltype(Kvasir::Interrupt::sercom0_2),
-                                       decltype(Kvasir::Interrupt::sercom0_other)>;
-        };
-
-        template<>
-        struct IsrIndex<1> {
-            using Type = brigand::list<decltype(Kvasir::Interrupt::sercom1_0),
-                                       decltype(Kvasir::Interrupt::sercom1_1),
-                                       decltype(Kvasir::Interrupt::sercom1_2),
-                                       decltype(Kvasir::Interrupt::sercom1_other)>;
-        };
-
-        template<>
-        struct IsrIndex<2> {
-            using Type = brigand::list<decltype(Kvasir::Interrupt::sercom2_0),
-                                       decltype(Kvasir::Interrupt::sercom2_1),
-                                       decltype(Kvasir::Interrupt::sercom2_2),
-                                       decltype(Kvasir::Interrupt::sercom2_other)>;
-        };
-
-        template<>
-        struct IsrIndex<3> {
-            using Type = brigand::list<decltype(Kvasir::Interrupt::sercom3_0),
-                                       decltype(Kvasir::Interrupt::sercom3_1),
-                                       decltype(Kvasir::Interrupt::sercom3_2),
-                                       decltype(Kvasir::Interrupt::sercom3_other)>;
-        };
-
-        template<>
-        struct IsrIndex<4> {
-            using Type = brigand::list<decltype(Kvasir::Interrupt::sercom4_0),
-                                       decltype(Kvasir::Interrupt::sercom4_1),
-                                       decltype(Kvasir::Interrupt::sercom4_2),
-                                       decltype(Kvasir::Interrupt::sercom4_other)>;
-        };
-
-        template<>
-        struct IsrIndex<5> {
-            using Type = brigand::list<decltype(Kvasir::Interrupt::sercom5_0),
-                                       decltype(Kvasir::Interrupt::sercom5_1),
-                                       decltype(Kvasir::Interrupt::sercom5_2),
-                                       decltype(Kvasir::Interrupt::sercom5_other)>;
-        };
-
-    }   // namespace detail
-
     struct SercomTraits : SercomTraitsBase<SercomTraits> {
-        static constexpr int                sercomInstanceBegin = 0;
-        static constexpr int                sercomInstanceEnd   = 6;
-        static constexpr std::array<int, 0> disabledInstances   = {{}};
-
-        template<unsigned Instance>
-        struct IsrIndex {
-            using Type = typename detail::IsrIndex<Instance>::Type;
-        };
-
-        template<unsigned Instance>
-        static constexpr auto DmaTriggers() {
-            static_assert(5 >= Instance);
-            if constexpr(Instance == 0) {
-                return std::make_pair(Kvasir::DMAC::TriggerSource::sercom0_rx,
-                                      DMAC::TriggerSource::sercom0_tx);
-            } else if constexpr(Instance == 1) {
-                return std::make_pair(Kvasir::DMAC::TriggerSource::sercom1_rx,
-                                      DMAC::TriggerSource::sercom1_tx);
-            } else if constexpr(Instance == 2) {
-                return std::make_pair(Kvasir::DMAC::TriggerSource::sercom2_rx,
-                                      DMAC::TriggerSource::sercom2_tx);
-            } else if constexpr(Instance == 3) {
-                return std::make_pair(Kvasir::DMAC::TriggerSource::sercom3_rx,
-                                      DMAC::TriggerSource::sercom3_tx);
-            } else if constexpr(Instance == 4) {
-                return std::make_pair(Kvasir::DMAC::TriggerSource::sercom4_rx,
-                                      DMAC::TriggerSource::sercom4_tx);
-            } else if constexpr(Instance == 5) {
-                return std::make_pair(Kvasir::DMAC::TriggerSource::sercom5_rx,
-                                      DMAC::TriggerSource::sercom5_tx);
-            }
-        }
-
-        template<unsigned Instance>
-        static constexpr auto DmaRX_Trigger() {
-            return DmaTriggers<Instance>().first;
-        }
-
-        template<unsigned Instance>
-        static constexpr auto DmaTX_Trigger() {
-            return DmaTriggers<Instance>().second;
-        }
-
         static constexpr std::array pinMuxInfos{
           // ATSAME51J18A, 64 pins: PORTA and PORTB, six SERCOMs. {instance, port, pin, mux, pad},
           // mux 2 is column C and 3 is column D of the SAM D5x/E5x data sheet (DS60001507N)
