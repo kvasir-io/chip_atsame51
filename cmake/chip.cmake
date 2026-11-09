@@ -26,4 +26,8 @@ kvasir_chip(
     DEFINITIONS
     KVASIR_CHIP_ATSAME51J18A=1
     KVASIR_CHIP_ATSAME51=1
-    KVASIR_CHIP_FAMILY_SAM=1)
+    KVASIR_CHIP_FAMILY_SAM=1
+    # the chip's register seam (Kvasir_SDK Register/Exec.hpp includes it at its end): the PORT's DIR and OUT as shared
+    # states, so that one apply() writing a pin's level or direction through two of their registers is a compile error
+    # (chip_atsam_common RegisterSeam.hpp)
+    [[KVASIR_CHIP_REGISTER_SEAM="chip/atsam_common/RegisterSeam.hpp"]])
