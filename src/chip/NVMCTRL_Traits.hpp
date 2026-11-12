@@ -3,6 +3,7 @@
 #include "ClockLimits.hpp"
 #include "WaitBounds.hpp"
 #include "atsam_common/NvmResult.hpp"
+#include "kvasir/Util/BusAddress.hpp"
 #include "peripherals/NVMCTRL.hpp"
 
 // The D5x/E5x NVMCTRL is not the D21/C21 one: commands go through CTRLB, the erase unit is a
@@ -65,11 +66,9 @@ namespace Kvasir { namespace NVMCTRL {
 
         /// ADDR[23:0] is a byte address (25.8.8), not the D21's word address. All 24 bits: the user
         /// row at 0x00804000 has bit 23 set.
-        template<typename T>
-        static void setAddr(T addr) {
-            apply(write(NVM::ADDR::addr,
-                        reinterpret_cast<std::uint32_t>(addr)
-                          & Kvasir::Register::maskFromRange(23, 0)));
+        // a row or page by its address (an integer) or by the object that lies there (a pointer)
+        static void setAddr(Kvasir::BusAddress addr) {
+            apply(write(NVM::ADDR::addr, addr.value & Kvasir::Register::maskFromRange(23, 0)));
         }
 
         /// 512-byte pages, 16 of them to the erase block (25.6.2: "sixteen pages and page size is
